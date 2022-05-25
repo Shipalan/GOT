@@ -37,11 +37,14 @@ if (jonSnowHealth <= jamieLannisterAttack - jonsSnowDefense){
 // Peasant throws Jon a health kit of 50
 const healthKit = 50;
 
+// Health kit added to Jon Snows health if it is greater than or equal to 100
 if ((jonSnowHealth + healthKit) >= 100) {
+    // Since his health would be higher than 100 we just set his health to 100
     jonSnowHealth = 100;
 } else {
-    jonSnowHealth += healthKit;
-    
+    // If his health doesnt go over 100 the health kit is added to his current health
+    jonSnowHealth += healthKit;    
 }
 
+// This displays his current health after the potion
 console.log(`Jon Snows Health is now ${jonSnowHealth}`);

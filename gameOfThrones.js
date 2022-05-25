@@ -33,3 +33,12 @@ if (jonSnowHealth <= jamieLannisterAttack - jonsSnowDefense){
     console.log(`Jon Snows health is down to ${jonSnowHealth}`);
 
 }
+
+// Peasant throws Jon a health kit of 50
+const healthKit = 50;
+
+if ((jonSnowHealth + healthKit) >= 100) {
+    jonSnowHealth = 100;
+} else {
+    jonSnowHealth += healthKit;
+}
